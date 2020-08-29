@@ -41,15 +41,39 @@ module.exports = {
   GetTicket: function (req, res) {
     res.json({
       status: true,
-      IsTicket: 0//Desctiption   0 = no or 1 =yes,
+      IsTicket: 1//Desctiption   0 = no or 1 =yes,
     });
   },
 
   GetEventSchedule: function (req, res) {
     res.json({
       status: true,
-      EventName: 'The legend show',
-      ArtistName: "Beyonce"
+      getEventSchedule: [
+        {
+        eventId:125,
+            eventName:"Single Ladies",
+            artistName: "Beyonce",
+            eventDate: "2020-08-14 12:45"
+        },
+        {
+          eventId:125,
+                    eventName:"Single Ladies",
+                    artistName: "Beyonce",
+                    eventDate: "2020-08-14 12:45"
+                },
+        {
+          eventId:125,
+                    eventName:"Single Ladies",
+                    artistName: "Beyonce",
+                    eventDate: "2020-08-14 12:45"
+                },
+        {
+          eventId:125,
+            eventName:"Single Ladies",
+            artistName: "Beyonce",
+            eventDate: "2020-08-14 12:45"
+        },
+    ]
     });
   },
   VipSupporter: function (req, res) {
