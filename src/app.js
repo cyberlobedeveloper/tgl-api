@@ -22,6 +22,7 @@ router.use('/user', require('./controllers/UserController'));
 router.use('/event', require('./controllers/EventController'));
 router.use('/chat', require('./controllers/ChatController'));
 router.use('/artist', require('./controllers/ArtistController'));
+router.use('/ticket', require('./controllers/TicketingController'));
 router.use('/message', require('./controllers/MessageController'));
 router.use('/notification', require('./controllers/NotificationController'));
 
