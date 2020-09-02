@@ -48,11 +48,11 @@ module.exports = {
         artistId: "123",
         artistName: "BEYONCE",
         eventType: [
-          Rock,
-          Pop,
-          Punk,
-          Rock
-        ],
+          'Rock',
+          'Pop',
+          'Punk',
+          'Rock'
+        ], 
         followArtist: 0,
         artistFollower: "30K",
         artistRating: 4.7
