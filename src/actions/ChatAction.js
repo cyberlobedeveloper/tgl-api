@@ -4,7 +4,7 @@ module.exports = {
 
   CommentList: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       comments: [
         {
             commentUserProfilePic: "imageUrl",
@@ -17,14 +17,14 @@ module.exports = {
 
   SendComment: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Message send successfully.'
     });
   },
 
   GetRoomInfo: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       room_details: {
         room_name: 'Global Chat',
         room_profile_picture: 'Imageurl',
@@ -60,7 +60,7 @@ module.exports = {
 
   GetListofRoom: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       chatRooms: [
         {
             roomName: 'Beyonce Club',
@@ -80,7 +80,7 @@ module.exports = {
 
   GetPendingRequest: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       pendingRequests:[
         {
             requestId: '456',
@@ -104,14 +104,14 @@ module.exports = {
 
   AcceptorRejectRequest: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'accepted / rejected request successfully.'
     });
   },
 
   GetChat: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       chatData: [
         {
             userName: 'Keith',
@@ -133,46 +133,46 @@ module.exports = {
 
   LeaveRoom: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'You  left from the room successfully.'
     });
   },
 
   DeleteRoom: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Room removed successfully.'
     });
   },
 
   CreateRoom: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Room created successfully.'
     });
   },
   EditRoomDetail: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Room updated successfully.'
     });
   },
 
   AddParticipants: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Users added successfully.'
     });
   },
   RemoveUser: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'User removed successfully.'
     });
   },
   GetAllPaticipantsList: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       participants: [
         {
             userId: '130',

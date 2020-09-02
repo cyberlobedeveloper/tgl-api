@@ -3,7 +3,7 @@ const moment = require('moment');
 module.exports = {
   getAllByUserId: async function (req, res) {
     res.json({
-      status: true, data: [{
+      status: 200, data: [{
         id: 1,
         notification: 'Your account verified successfully.',
         createAt: moment()
@@ -17,6 +17,6 @@ module.exports = {
   },
 
   deleteById: async function (req, res) {
-    res.json({status: true, message: 'Notification deleted.'});
+    res.json({status: 200, message: 'Notification deleted.'});
   }
 };

@@ -4,7 +4,7 @@ module.exports = {
 
   GetEventDetails: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       eventData: [
         {
             statusCode: 200,
@@ -33,21 +33,21 @@ module.exports = {
 
   BuyTicket: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       message: 'Ticket generated successfully.'
     });
   },
 
   GetTicket: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       IsTicket: 1//Desctiption   0 = no or 1 =yes,
     });
   },
 
   GetEventSchedule: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       getEventSchedule: [
         {
         eventId:125,
@@ -78,7 +78,7 @@ module.exports = {
   },
   VipSupporter: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       no_participants: 100,
     vip_supporters: [
         {
@@ -97,7 +97,7 @@ module.exports = {
 
   GetUserByAlbum: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       getUserBuyAlbum: [
         {
             evetBuyId: 123,
@@ -125,7 +125,7 @@ module.exports = {
 
   EventsForYou: function (req, res) {
     res.json({
-      status: true,
+      status: 200,
       eventForYou: [
         {
             BuyArtitsID: 132,
